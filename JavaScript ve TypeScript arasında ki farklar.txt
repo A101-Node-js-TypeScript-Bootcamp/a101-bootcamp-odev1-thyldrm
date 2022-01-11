@@ -1,0 +1,16 @@
+JavaScript varken neden TypeScript ?
+
+JavaScript ilk geliştirilmeye başlandığında, JavaScript geliştirme ekibi JavaScript'i istemci tarafı programlama dili olarak tanıttı. Ancak insanlar JavaScript'i kullanırken, geliştiriciler zamanla JavaScript'in sunucu tarafı programlama dili olarak da kullanılabileceğini anlamaya başladılar. Ancak JavaScript büyürken kodlar karmaşık ve ağır hale geliyordu. Bu nedenle JavaScript, Nesne yönelimli bir programlama dilinin gereksinimlerini tam olarak karşılayamadı. Bu durum, JavaScript'in sunucu tarafı teknolojisi olarak kurumsal düzeyde başarılı olmasını engelliyordu. Ardından TypeScript, bu boşluğu doldurmak için geliştirme ekibi tarafından geliştirildi.
+
+TypeScript'in Özellikleri
+
+TypeScript Kodu Düz JavaScript Koduna dönüştürülür -> TypeScript kodu tarayıcılar tarafından anlaşılamaz. Bu nedenle, eğer kod TypeScript'te yazılmışsa, derlenir ve kod dönüştürülür, yani kodu JavaScript'e çevirir. JavaScript kodu yardımıyla tarayıcılar kodu okuyabilir ve görüntüleyebilir. 
+JavaScript TypeScript'tir -> JavaScript'te yazılan kod ne olursa olsun, uzantı .js'den .ts'ye değiştirilerek TypeScript'e dönüştürülebilir. TypeScript'i her yerde kullanabiliriz -> TypeScript kodu herhangi bir tarayıcıda, cihazda veya herhangi bir işletim sisteminde çalıştırılabilir. TypeScript, herhangi bir sanal makineye vb. özgü değildir. 
+TypeScript, JS kütüphanelerini destekler: TypeScript ile geliştiriciler, mevcut JavaScript kodunu kullanabilir, popüler JavaScript kütüphaneleri kullanabilirler.
+
+TypeScript ve JavaScript arasındaki farklar ?
+
+TypeScript, Nesne yönelimli bir programlama dili olarak bilinirken, JavaScript bir betik dilidir.
+TypeScript, Statik yazma olarak bilinen bir özelliğe sahiptir, ancak JavaScript'te bu özellik yoktur. 
+TypeScript modülleri desteklerken JavaScript modülleri desteklemez. 
+TypeScript'de Interface vardır, ancak JavaScript'de bir Interface yoktur.

@@ -1,0 +1,42 @@
+NodeJS de bir proje nasıl ayağa kaldırılır?
+
+Öncelikle node kurmalıyız.
+
+->  npm install nodejs
+
+Ardından http paketini import ediyoruz.
+
+const http=require("http")
+
+Bir fonksiyon yazıyoruz ve aşağıdaki örnekte girilen url'yi ekrana yazdırıyoruz.
+
+const server = http.createServer((req,res)=>{
+    const url=req.url;   //Gelen url'yi yakalıyoruz
+    res.write(url)          //Url'yi yazdırıyoruz.
+    res.end();               //Request response döngüsünü sonlandırıyoruz.
+})
+
+const port=5000; //Sunucunun hangi portta çalışması gerektiğini belirten bir port atıyoruz.
+
+server.listen(port, ()=>{
+    console.log(`Sunucu Başlatıldı. Port No:${port}`)
+})
+
+------------------------------------------------------------
+
+Aynı şekilde express ile de NodeJS ayağa kaldırılabilir.
+
+express'i import ediyoruz.
+
+const express=require("express")
+const app = express();
+
+app.get("/",(req,res) => {
+     res.send("Hello A101")
+}
+
+const port=5000;
+
+app.listen(port, ()=>{
+    console.log(`Sunucu Başlatıldı. Port No:${port}`)
+})
